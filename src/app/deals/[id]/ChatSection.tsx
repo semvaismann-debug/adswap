@@ -64,7 +64,7 @@ export default function ChatSection({
             .select('id, full_name')
             .eq('id', newMsg.sender_id)
             .single()
-          setMessages(prev => [...prev, { ...newMsg, sender: sender ?? undefined }])
+          setMessages(prev => [...prev, { ...newMsg, sender: sender ?? undefined } as MessageWithSender])
         }
       )
       .subscribe()
