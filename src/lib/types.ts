@@ -15,6 +15,7 @@ export type Category =
   | 'health'
   | 'travel'
   | 'food'
+  | 'fashion'
   | 'other'
 
 export const CATEGORIES: { value: Category; label: string }[] = [
@@ -27,6 +28,7 @@ export const CATEGORIES: { value: Category; label: string }[] = [
   { value: 'health', label: 'Здоровье' },
   { value: 'travel', label: 'Путешествия' },
   { value: 'food', label: 'Еда' },
+  { value: 'fashion', label: 'Одежда' },
   { value: 'other', label: 'Другое' },
 ]
 
